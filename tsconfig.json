@@ -22,7 +22,8 @@
     "paths": {
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
-      "@styles/*": ["styles/*"]
+      "@styles/*": ["styles/*"],
+      "@api/*": ["api/*"]
     }
   },
   "include": [
