@@ -1,5 +1,9 @@
 import { AxiosInstance, AxiosResponse } from 'axios'
-import { GetAppsResponse } from '@api/services/AppsService.types'
+
+import {
+  GetAppResponse,
+  GetAppsResponse
+} from '@api/services/AppsService.types'
 
 class AppsService {
   private api: AxiosInstance
@@ -10,6 +14,10 @@ class AppsService {
 
   getApps(): Promise<AxiosResponse<GetAppsResponse>> {
     return this.api.get('/list')
+  }
+
+  getApp(id: string): Promise<AxiosResponse<GetAppResponse>> {
+    return this.api.get(`/details/${id}`)
   }
 }
 
