@@ -7,11 +7,11 @@ import { FC, ReactNode } from 'react'
 
 const queryClient = new QueryClient()
 
-interface Interface {
+interface QueryClientProviderProps {
   children?: ReactNode
 }
 
-export const QueryClientProvider: FC<Interface> = ({ children }) => {
+export const QueryClientProvider: FC<QueryClientProviderProps> = ({ children }) => {
   return (
     <QueryClientProviderBase client={queryClient}>
       {children}
