@@ -23,7 +23,10 @@
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
       "@styles/*": ["styles/*"],
-      "@api/*": ["api/*"]
+      "@api/*": ["api/*"],
+      "@consts/*": ["consts/*"],
+      "@contextProviders/*": ["contextProviders/*"],
+      "@hooks/*": ["hooks/*"],
     }
   },
   "include": [
